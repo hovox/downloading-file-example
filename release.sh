@@ -11,11 +11,11 @@ versionstring=$(cat "$plistpath" | grep "CFBundleShortVersionString" -A 1 | grep
 echo "version string is $versionstring"
 
 
-git tag $versionstring;
-git push --tags;
+# git tag $versionstring;
+# git push --tags;
 params="{\"tag_name\": \"$versionstring\", \"target_commitish\": \"live\", \"name\": \"$versionstring\", \"body\": \"$1\" }"
 echo "params are $params"
-curl -i -X POST https://api.github.com/repos/hovox/downloading-file-example/releases?access_token=943b006b6ca8bd0231b3f99a675429a0b1b79817 -d "$params" > /tmp/result.txt;
+curl -i -X POST https://api.github.com/repos/hovox/downloading-file-example/releases?access_token=ed70a8ef89c31f9ffccae868d8480f73bff961f7 -d "$params" > /tmp/result.txt;
 stt=$(cat /tmp/result.txt | grep "Status: 201 Created" | tr -d '\r' | tr -d '\n');
 
 echo "$stt"
