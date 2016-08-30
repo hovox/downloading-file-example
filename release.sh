@@ -15,7 +15,7 @@ git tag $versionstring;
 git push --tags;
 params="{\"tag_name\": \"$versionstring\", \"target_commitish\": \"live\", \"name\": \"$versionstring\", \"body\": \"$1\" }"
 echo "params are $params"
-curl -i -X POST https://api.github.com/repos/hovox/downloading-file-example/releases?access_token=66580f935a3d0f0c513a86fb67c5a9cccf577cb4 -d "$params" > /tmp/result.txt;
+curl -i -X POST https://api.github.com/repos/hovox/downloading-file-example/releases?access_token=943b006b6ca8bd0231b3f99a675429a0b1b79817 -d "$params" > /tmp/result.txt;
 stt=$(cat /tmp/result.txt | grep "Status: 201 Created" | tr -d '\r' | tr -d '\n');
 
 echo "$stt"
