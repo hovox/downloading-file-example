@@ -89,15 +89,12 @@
     
     NSString *destinationFilename = downloadTask.originalRequest.URL.lastPathComponent;
     NSURL *destinationURL = [self.docDirectoryURL URLByAppendingPathComponent:destinationFilename];
-    
     if ([fileManager fileExistsAtPath:[destinationURL path]]) {
         [fileManager removeItemAtURL:destinationURL error:nil];
     }
-    
     BOOL success = [fileManager copyItemAtURL:location
                                         toURL:destinationURL
                                         error:&error];
-    
     if (success) {
         // Change the flag values of the respective FileDownloadInfo object.
         int index = [self getFileDownloadInfoIndexWithTaskIdentifier:downloadTask.taskIdentifier];

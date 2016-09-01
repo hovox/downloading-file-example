@@ -13,11 +13,11 @@
 
 
 // Define some constants regarding the tag values of the prototype cell's subviews.
-#define CellLabelTagValue               10
-#define CellStartPauseButtonTagValue    20
-#define CellStopButtonTagValue          30
-#define CellProgressBarTagValue         40
-#define CellLabelReadyTagValue          50
+#define CellLabelTagValue               20
+#define CellStartPauseButtonTagValue    30
+#define CellStopButtonTagValue          40
+#define CellProgressBarTagValue         50
+#define CellLabelReadyTagValue          60
 
 
 @interface ViewController ()

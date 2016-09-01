@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92241BF91D77FFA300254D7C /* picsart-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92241BF81D77FFA300254D7C /* picsart-Info.plist */; };
 		926B47021AA1AF8400D9E0DD /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B47011AA1AF8400D9E0DD /* DownloadManager.m */; };
 		C009F95C18E2065E00EDB1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95B18E2065E00EDB1AF /* Foundation.framework */; };
 		C009F95E18E2065E00EDB1AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95D18E2065E00EDB1AF /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92241BF81D77FFA300254D7C /* picsart-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "picsart-Info.plist"; sourceTree = "<group>"; };
 		926B47001AA1AF8400D9E0DD /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		926B47011AA1AF8400D9E0DD /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		C009F95818E2065E00EDB1AF /* BGTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		C009F94F18E2065E00EDB1AF = {
 			isa = PBXGroup;
 			children = (
+				92241BF81D77FFA300254D7C /* picsart-Info.plist */,
 				C009F96118E2065E00EDB1AF /* BGTransferDemo */,
 				C009F98018E2065E00EDB1AF /* BGTransferDemoTests */,
 				C009F95A18E2065E00EDB1AF /* Frameworks */,
@@ -248,6 +251,7 @@
 				C009F97418E2065E00EDB1AF /* Images.xcassets in Resources */,
 				C009F96618E2065E00EDB1AF /* InfoPlist.strings in Resources */,
 				C009F96F18E2065E00EDB1AF /* Main.storyboard in Resources */,
+				92241BF91D77FFA300254D7C /* picsart-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
